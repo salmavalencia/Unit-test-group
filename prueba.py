@@ -1,5 +1,3 @@
-import math
-import numpy as np
 import random
 import sys
 
@@ -101,9 +99,9 @@ def distribuirEstudiantes(estudiantes, cantidad_por_grupo):
 
 
 def main():
-    grupos = int(sys.argv[1])
-    pathEstudiantes = sys.argv[2]
-    pathTopics = sys.argv[3]
+    grupos = 6 #int(sys.argv[1])
+    pathEstudiantes = "file1.txt" #sys.argv[2]
+    pathTopics = "file2.txt" #sys.argv[3]
 
     estudiantes = getFileData(pathEstudiantes)
     topic = getFileData(pathTopics)
